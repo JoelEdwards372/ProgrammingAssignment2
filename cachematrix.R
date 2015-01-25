@@ -48,11 +48,11 @@ cacheSolve <- function(x) {
 ##Tests
 a <- makeCacheMatrix(matrix(1:4,2))
 a$get()
-a$getImatrix()
+a$getInvmatrix()
 a$set(matrix(5:8,2))
 a$get()
 cacheSolve(a)
 cacheSolve(a)
-a$getImatrix()
-b = a$getImatrix()
+a$getInvmatrix()
+b = a$getInvmatrix()
 a$get() %*% b
